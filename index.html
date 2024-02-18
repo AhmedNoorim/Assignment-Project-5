@@ -49,7 +49,7 @@
                         <li><a>Search</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost raleway text-4xl font-extrabold px-0">G Travel</a>
+                <a class="btn btn-ghost raleway text-3xl md:text-4xl font-extrabold px-0">G Travel</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 text-lg font-medium text-[#030712B3]">
@@ -131,7 +131,7 @@
                     Offer</button>
             </section>
 
-            <!-- ticketing -->
+            <!-- ticket & seat -->
             <section class="rounded-t-3xl border-clr-primary border-t bg-[#F7F8F8] mt-8 pb-24 raleway">
                 <!-- ticket details -->
                 <div class="mt-8 max-w-[95%] md:max-w-[90%] mx-auto">
@@ -141,20 +141,21 @@
                         and make lasting memories. Join us for an unforgettable adventure of a lifetime!
                     </p>
                     <!-- ticket section -->
-                    <div class="grid grid-cols-12 grid-rows-1 mt-8 bg-white rounded-3xl">
-                        <div class="col-span-8 p-6 grid items-center">
-                            <div class="flex justify-between items-center">
-                                <div class="flex gap-3 items-center">
-                                    <div>
-                                        <img src="images/bus-logo.png" alt="">
+                    <div class="grid md:grid-cols-12 grid-rows-1 mt-8 bg-white rounded-3xl">
+                        <div class="col-span-12 lg:col-span-8 p-6 grid items-center">
+                            <div class="flex flex-col lg:flex-row justify-center lg:justify-between items-center">
+                                <div class="flex gap-3 justify-center items-center">
+                                    <div class="w-[80px]">
+                                        <img src="images/bus-logo.png" alt="" class="w-full">
                                     </div>
                                     <div>
-                                        <h1 class="text-3xl font-bold">Green Travels</h1>
-                                        <p class="inter">Coach-009-WEB ! AC_Business</p>
+                                        <h1 class="text-xl md:text-3xl font-bold">Green Travels</h1>
+                                        <p class="inter text-sm md:text-base">Coach-009-WEB!<br
+                                                class="md:hidden">AC_Business</p>
                                     </div>
                                 </div>
                                 <div
-                                    class="w-[27%] max-w-[175px] h-[15%] bg-[#1DD10026] p-2 rounded-xl flex justify-center gap-1 items-center">
+                                    class="w-[75%] md:w-[27%] max-w-[175px] h-[15%] mt-4 lg:mt-0 bg-[#1DD10026] p-2 rounded-xl flex justify-center gap-1 items-center">
                                     <img src="images/seat-green.png" alt="">
                                     <p class="inter font-medium text-clr-primary"><span>40</span> Seat Left</p>
                                 </div>
@@ -170,7 +171,8 @@
                                     <h1 class="text-black">9:00 PM</h1>
                                 </div>
                                 <hr class="border-dashed border-gray-200 border mt-2">
-                                <div class="inter font-medium flex justify-between gap-4 mt-3 text-black text-center">
+                                <div
+                                    class="inter font-medium flex flex-col lg:flex-row justify-between gap-4 mt-3 text-black text-center">
                                     <div class="bg-[#ececec] p-3 rounded-lg flex-1">Boarding Point - Laxmipur</div>
                                     <div class="bg-[#ececec] p-3 rounded-lg flex-1">Dropping Point - Bogura</div>
                                     <div class="bg-[#ececec] p-3 rounded-lg flex-1">Est. Time - 11hr</div>
@@ -178,9 +180,9 @@
                             </div>
                         </div>
                         <div class="col-span-1">
-                            <img src="images/info-devider.png" alt="">
+                            <img src="images/info-devider.png" alt="" class="hidden lg:flex">
                         </div>
-                        <div class="col-span-3 grid items-center justify-center">
+                        <div class="col-span-12 lg:col-span-3 grid items-center justify-center mb-8 lg:mb-0">
                             <div class="text-center">
                                 <img src="images/fare.png" alt="taka" class="mx-auto">
                                 <h1 class="text-3xl font-bold">550 Taka</h1>
@@ -193,7 +195,7 @@
                 <!-- seat selection -->
                 <div class="mt-8 max-w-[95%] md:max-w-[90%] mx-auto bg-white rounded-3xl raleway">
                     <div class="grid grid-cols-12">
-                        <div class="col-span-7 p-8">
+                        <div class="col-span-12 lg:col-span-7 p-8">
                             <h1 class="text-2xl font-semibold">Select Your Seat</h1>
                             <hr class="my-4 border-dashed border border-gray-300">
                             <div class="flex justify-between">
@@ -209,8 +211,8 @@
                             <hr class="my-4 border-dashed border border-gray-300">
                             <div class="grid grid-cols-10 inter text-center gap-4">
                                 <!-- row Driving -->
-                                <div class="col-span-8 p-3"></div>
-                                <div class="col-span-2 bg-gray-300 p-3 rounded-lg"><svg width="28" height="28"
+                                <div class="col-span-8 p-1 md:p-3"></div>
+                                <div class="col-span-2 bg-gray-300 p-1 md:p-3 rounded-lg"><svg width="28" height="28"
                                         viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
                                         class="mx-auto">
                                         <path
@@ -220,78 +222,79 @@
                                     </svg>
                                 </div>
                                 <!-- row A -->
-                                <div class="col-span-1 p-3">A</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">A1</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">A2</div>
+                                <div class="col-span-1 p-1 md:p-3">A</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">A1</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">A2</div>
                                 <div class="col-span-1"></div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">A3</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">A4</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">A3</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">A4</div>
                                 <!-- row B -->
-                                <div class="col-span-1 p-3">B</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">B1</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">B2</div>
+                                <div class="col-span-1 p-1 md:p-3">B</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">B1</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">B2</div>
                                 <div class="col-span-1"></div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">B3</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">B4</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">B3</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">B4</div>
                                 <!-- row C -->
-                                <div class="col-span-1 p-3">C</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">C1</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">C2</div>
+                                <div class="col-span-1 p-1 md:p-3">C</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">C1</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">C2</div>
                                 <div class="col-span-1"></div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">C3</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">C4</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">C3</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">C4</div>
                                 <!-- row D -->
-                                <div class="col-span-1 p-3">D</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">D1</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">D2</div>
+                                <div class="col-span-1 p-1 md:p-3">D</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">D1</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">D2</div>
                                 <div class="col-span-1"></div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">D3</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">D4</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">D3</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">D4</div>
                                 <!-- row E -->
-                                <div class="col-span-1 p-3">E</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">E1</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">E2</div>
+                                <div class="col-span-1 p-1 md:p-3">E</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">E1</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">E2</div>
                                 <div class="col-span-1"></div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">E3</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">E4</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">E3</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">E4</div>
                                 <!-- row F -->
-                                <div class="col-span-1 p-3">F</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">F1</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">F2</div>
+                                <div class="col-span-1 p-1 md:p-3">F</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">F1</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">F2</div>
                                 <div class="col-span-1"></div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">F3</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">F4</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">F3</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">F4</div>
                                 <!-- row G -->
-                                <div class="col-span-1 p-3">G</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">G1</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">G2</div>
+                                <div class="col-span-1 p-1 md:p-3">G</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">G1</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">G2</div>
                                 <div class="col-span-1"></div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">G3</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">G4</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">G3</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">G4</div>
                                 <!-- row H -->
-                                <div class="col-span-1 p-3">H</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">H1</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">H2</div>
+                                <div class="col-span-1 p-1 md:p-3">H</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">H1</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">H2</div>
                                 <div class="col-span-1"></div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">H3</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">H4</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">H3</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">H4</div>
                                 <!-- row I -->
-                                <div class="col-span-1 p-3">I</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">I1</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">I2</div>
+                                <div class="col-span-1 p-1 md:p-3">I</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">I1</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">I2</div>
                                 <div class="col-span-1"></div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">I3</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">I4</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">I3</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">I4</div>
                                 <!-- row J -->
-                                <div class="col-span-1 p-3">J</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">J1</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">J2</div>
+                                <div class="col-span-1 p-1 md:p-3">J</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">J1</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">J2</div>
                                 <div class="col-span-1"></div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">J3</div>
-                                <div class="col-span-2 bg-gray-100 p-3 rounded-lg">J4</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">J3</div>
+                                <div class="col-span-2 bg-gray-100 p-1 md:p-3 rounded-lg">J4</div>
                             </div>
                         </div>
-                        <div class="h-full border-l-2 border-dashed border-gray-300 col-span-5 p-8">
+                        <div
+                            class="h-full border-none lg:border-l-2 lg:border-dashed border-gray-300 col-span-12 lg:col-span-5 p-8">
                             <h1 class="text-2xl font-semibold">Select Your Seat</h1>
                             <hr class="my-4 border-dashed border border-gray-300">
                             <div class="grid grid-cols-9 bg-gray-100 p-6 rounded-lg">
@@ -312,7 +315,7 @@
                                 </div>
                                 <div class="col-span-9 mt-4">
                                     <label class="input input-bordered flex items-center gap-2 border-none">
-                                        <input type="text" class="grow text-sm" placeholder="Have Any Coupons?" />
+                                        <input type="text" class="grow text-sm w-10" placeholder="Coupons?" />
                                         <span class="btn bg-clr-primary text-white border-none min-h-8 h-8">Apply
                                         </span>
                                     </label>
@@ -364,8 +367,9 @@
 
 
         <!-- confirmation pop-up start -->
-        <section id="confirmation">
-            <div class="card w-[75%] md:w-[50%] mx-auto my-28 md:my-60 bg-white shadow-xl border text-neutral-content">
+        <section id="confirmation" class="bg-gray-200 w-screen h-screen flex">
+            <div
+                class="card w-[75%] md:w-[50%] mx-auto my-auto md:my-60 bg-white shadow-xl border text-neutral-content">
                 <div class="card-body items-center text-center">
                     <img src="images/success.png" alt="">
                     <h2 class="card-title text-green-600 font-bold">Success</h2>
@@ -382,13 +386,13 @@
     <!-- footer start -->
     <footer>
         <div class="bg-black p-20">
-            <div class="flex justify-between items-center">
-                <div class="raleway">
-                    <h1 class="font-black text-white text-4xl mb-2">G Travels</h1>
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="raleway text-center md:text-left">
+                    <h1 class="font-black text-white text-3xl md:text-4xl mb-2">G Travels</h1>
                     <h1 class=" text-gray-400 ">Ensure Your Safe Journey Now</h1>
                 </div>
                 <div>
-                    <h1 class="text-white text-center mb-2">Download Now</h1>
+                    <h1 class="text-white text-center mb-2 mt-6 md:mt-0">Download Now</h1>
                     <!-- google play svg -->
                     <svg width="189" height="56" viewBox="0 0 189 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -418,12 +422,12 @@
                     </svg>
                 </div>
             </div>
-            <hr class="my-6 border border-dashed border-gray-500">
-            <div class="inter flex justify-between">
-                <div class="text-xs text-gray-500">
-                    @all rights reserved, P-Ticket services limited.2024
+            <hr class="my-8 border border-dashed border-gray-500">
+            <div class="inter flex flex-col-reverse lg:flex-row justify-between text-center lg:text-left">
+                <div class="text-xs text-gray-500  mt-6 lg:mt-0">
+                    @all rights reserved,<br class="md:hidden"> G-Travel services limited.2024
                 </div>
-                <div class="flex gap-8 text-white text-sm">
+                <div class="flex flex-col lg:flex-row gap-4 lg:gap-8 text-white text-sm ">
                     <h1>Term & Condition</h1>
                     <h1>Return & Refund Policy</h1>
                     <h1>Privacy Policy</h1>
