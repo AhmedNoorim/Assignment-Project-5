@@ -314,24 +314,28 @@
                                     <div class="col-span-3 mt-2 text-right">550</div> -->
                                 </div>
                                 <hr class="col-span-9 border border-dashed mt-2">
-                                <div id="total-price" class="col-span-9 flex justify-between font-bold inter mt-2">
+                                <div class="col-span-9 flex justify-between font-bold inter mt-2">
                                     <h1>Total Price</h1>
-                                    <h1>BDT <span>0</span></h1>
+                                    <h1>BDT <span id="total-price">0</span></h1>
                                 </div>
-                                <div class="col-span-9 mt-4">
+                                <div id="coupon-apply-div" class="col-span-9 mt-4">
                                     <label class="input input-bordered flex items-center gap-2 border-none">
-                                        <input type="text" class="grow text-sm w-10" placeholder="Coupons?" />
-                                        <span class="btn bg-clr-primary text-white border-none min-h-8 h-8">Apply
+                                        <input id="coupon-input" type="text" class="grow text-sm w-10"
+                                            placeholder="Coupons?" />
+                                        <span id="coupon-apply"
+                                            class="btn bg-clr-primary text-white border-none min-h-8 h-8">Apply
                                         </span>
                                     </label>
                                 </div>
                                 <!-- discount -->
                                 <div id="discount"
-                                    class="col-span-9 flex justify-between font-medium text-gray-400 inter mt-2">
+                                    class="col-span-9 flex justify-between font-medium text-gray-400 inter mt-2 hidden">
+                                    <h1>Discount Price</h1>
+                                    <h1>BDT <span id="discount-amount">0</span></h1>
                                 </div>
-                                <div id="total-price" class="col-span-9 flex justify-between font-bold inter mt-2">
+                                <div class="col-span-9 flex justify-between font-bold inter mt-2">
                                     <h1>Grand Total</h1>
-                                    <h1>BDT <span>0</span></h1>
+                                    <h1>BDT <span id="grand-total">0</span></h1>
                                 </div>
                             </div>
                             <div class="raleway">
