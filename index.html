@@ -30,7 +30,7 @@
 
 <body>
     <!-- navbar start -->
-    <nav class="mt-2 md:mt-4 lg:mt-8 max-w-[95%] md:max-w-[90%] mx-auto text-center">
+    <nav id="navbar" class="mt-2 md:mt-4 lg:mt-8 max-w-[95%] md:max-w-[90%] mx-auto text-center">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -343,24 +343,24 @@
                                     <div class="label">
                                         <span class="label-text font-bold">Passenger Name</span>
                                     </div>
-                                    <input type="text" placeholder="Enter Your Name"
+                                    <input id="passenger-name" type="text" placeholder="Enter Your Name"
                                         class="input input-bordered w-full" />
                                 </label>
                                 <label class="form-control w-full my-2">
                                     <div class="label">
                                         <span class="label-text font-bold">Phone Number*</span>
                                     </div>
-                                    <input type="number" placeholder="Enter Your Phone Number"
+                                    <input id="phone-number" type="number" placeholder="Enter Your Phone Number"
                                         class="input input-bordered w-full" />
                                 </label>
                                 <label class="form-control w-full my-2">
                                     <div class="label">
                                         <span class="label-text font-bold">Email ID</span>
                                     </div>
-                                    <input type="text" placeholder="Enter Your Email"
+                                    <input id="email-id" type="text" placeholder="Enter Your Email"
                                         class="input input-bordered w-full" />
                                 </label>
-                                <button
+                                <button id="next"
                                     class="raleway mt-2 btn bg-clr-primary text-white font-bold rounded-xl w-full">Next</button>
                             </div>
                             <div class="inter flex justify-around w-full text-sm p-2 underline">
@@ -376,14 +376,15 @@
 
 
         <!-- confirmation pop-up start -->
-        <section id="confirmation" class="bg-gray-200 w-screen h-screen flex">
+        <section id="confirmation" class="bg-gray-200 w-screen h-screen flex hidden">
             <div class="card w-[75%] md:w-[50%] mx-auto my-auto bg-white shadow-xl border text-neutral-content">
                 <div class="card-body items-center text-center">
                     <img src="images/success.png" alt="">
                     <h2 class="card-title text-green-600 font-bold">Success</h2>
                     <p class="text-black font-bold">Thank you for Booking Our Service.</p>
                     <p class="text-gray-500">Thank you for Booking Our Service.</p>
-                    <button class="btn bg-clr-primary rounded-full text-white w-[75%] max-w-[200px]">Continue</button>
+                    <button id="confirmation-continue"
+                        class="btn bg-clr-primary rounded-full text-white w-[75%] max-w-[200px]">Continue</button>
                 </div>
             </div>
         </section>
@@ -392,7 +393,7 @@
     <!-- main end -->
 
     <!-- footer start -->
-    <footer>
+    <footer id="footer">
         <div class="bg-black p-20">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="raleway text-center md:text-left">

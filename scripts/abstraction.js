@@ -4,13 +4,13 @@ function getElementById(elementID) {
 }
 
 // hide element by id
-function hideElement(elementID) {
+function hideElementById(elementID) {
     const element = document.getElementById(elementID)
     element.classList.add('hidden')
 }
 
 // unhide element by id
-function unHideElement(elementID) {
+function unHideElementById(elementID) {
     const element = document.getElementById(elementID)
     element.classList.remove('hidden')
 }
@@ -26,7 +26,7 @@ function setBackGroundColorById(elementID, color) {
 function removeBackGroundColorById(elementID, color) {
     const element = document.getElementById(elementID)
     element.classList.remove('bg-' + color)
-    element.classList.remove('text-black')
+    element.classList.remove('text-white')
 }
 
 // get integer parsed inner-text by ID
